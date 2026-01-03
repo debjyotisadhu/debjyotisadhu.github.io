@@ -8,15 +8,15 @@
 </head>
 <body>
 
-<div class="container">
+<div class="layout">
 
-  <!-- LEFT PANEL -->
-  <aside class="sidebar">
+  <!-- HEADER / SIDEBAR -->
+  <header class="sidebar">
     <h1>Debjyoti Sadhu</h1>
     <h2>Senior Data Scientist</h2>
+
     <p class="tagline">
-      I build transparent, auditable AI systems at the intersection of
-      finance, risk, and machine learning.
+      Building transparent, auditable AI systems in finance, risk, and ML.
     </p>
 
     <nav>
@@ -32,103 +32,100 @@
       <a href="https://github.com" target="_blank">GitHub</a>
       <a href="assets/resume.pdf" target="_blank">Resume</a>
     </div>
-  </aside>
+  </header>
 
-  <!-- RIGHT PANEL -->
+  <!-- MAIN CONTENT -->
   <main class="content">
 
-    <!-- ABOUT -->
     <section id="about">
       <h3>About</h3>
       <p>
         Senior Data Scientist with 7.5+ years of experience in quantitative
-        analysis, AI/ML, and risk management within the financial domain.
-        Currently working as Vice President – Strats at Goldman Sachs.
-      </p>
-      <p>
-        Specialized in regulatory capital, portfolio optimization,
-        RAG-powered systems, and end-to-end ML platforms, with strong academic
-        grounding from ISI Kolkata and Jadavpur University.
+        analysis, AI/ML, and regulatory risk. Currently Vice President – Strats
+        at Goldman Sachs, specializing in capital models, RAG systems, and
+        explainable ML.
       </p>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience">
       <h3>Experience</h3>
 
-      <div class="item">
+      <div class="card">
         <h4>Goldman Sachs — Vice President, Strats</h4>
-        <span>Dec 2024 – Present | Bengaluru</span>
+        <span>Dec 2024 – Present</span>
         <ul>
-          <li>Built and backtested VaR and Stressed VaR models using Monte Carlo and historical simulation.</li>
-          <li>Designed capital optimization frameworks reducing capital charge by $1.35B under Basel III (SA-CCR).</li>
-          <li><strong>Developed a RAG-powered Streamlit chatbot</strong> for capital policy lookup and UAT noise analysis, improving transparency and audit readiness.</li>
+          <li>Built VaR & Stressed VaR models using Monte Carlo and historical simulation.</li>
+          <li>Reduced regulatory capital by $1.35B under Basel III (SA-CCR).</li>
+          <li><strong>Developed a RAG-powered Streamlit chatbot</strong> for policy lookup and UAT noise analysis.</li>
         </ul>
       </div>
 
-      <div class="item">
+      <div class="card">
         <h4>Wells Fargo — Senior AVP, Quantitative Analyst</h4>
-        <span>Feb 2022 – Dec 2024 | Bengaluru</span>
+        <span>Feb 2022 – Dec 2024</span>
         <ul>
-          <li>Optimized branch resource allocation delivering $6M annual cost savings.</li>
-          <li>Built credit card propensity models generating $10M+ incremental revenue.</li>
-          <li>Developed in-house AutoML platform reducing ML iteration time by 65%.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <h4>Standard Chartered Bank — Associate Manager (MLE)</h4>
-        <span>Jun 2020 – Feb 2022</span>
-        <ul>
-          <li>Built scalable feature pipelines (75% faster computation).</li>
-          <li>Led SAS → Python/PySpark migration for retail banking models.</li>
+          <li>Delivered $6M annual savings via resource optimization.</li>
+          <li>Generated $10M+ revenue using credit card propensity models.</li>
         </ul>
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects">
       <h3>Projects</h3>
 
-      <div class="item">
-        <h4>RAG-powered Capital Requirement Dashboard</h4>
+      <div class="card">
+        <h4>RAG-Powered Capital Requirement Dashboard</h4>
         <p>
-          Streamlit-based chatbot enabling regulatory policy lookup and
-          explainable UAT diagnostics using section-aware RAG architecture.
+          Streamlit chatbot enabling regulatory policy lookup and explainable
+          UAT diagnostics using section-aware RAG.
         </p>
-        <span>Python · RAG · Vector DB · Streamlit</span>
       </div>
 
-      <div class="item">
+      <div class="card">
         <h4>Statistical Learning Chatbot</h4>
         <p>
-          Built a RAG assistant over “An Introduction to Statistical Learning”
-          enabling semantic search and explainable Q&A.
+          RAG assistant over “An Introduction to Statistical Learning” for
+          semantic search and explainable Q&A.
         </p>
-        <span>LLMs · RAG · Streamlit · FAISS</span>
-      </div>
-
-      <div class="item">
-        <h4>PDF Toolkit (iLovePDF Alternative)</h4>
-        <p>
-          Developed a privacy-first PDF utility supporting merge, split,
-          unlock, compress, and watermark operations.
-        </p>
-        <span>Python · Streamlit · PyPDF</span>
       </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- SKILLS WITH BOXES -->
     <section id="skills">
       <h3>Skills</h3>
-      <p>
-        Python, PySpark, SQL, R, FastAPI, LangChain, RAG, LLMs,
-        XGBoost, AutoML, Portfolio Optimization, Regulatory Capital,
-        Streamlit, Plotly
-      </p>
+
+      <div class="skill-group">
+        <h5>Programming & Tools</h5>
+        <div class="skill-box">
+          <span>Python</span><span>PySpark</span><span>SQL</span>
+          <span>R</span><span>FastAPI</span><span>Git</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h5>Machine Learning & GenAI</h5>
+        <div class="skill-box">
+          <span>XGBoost</span><span>AutoML</span><span>LLMs</span>
+          <span>RAG</span><span>Transformers</span><span>LSTM</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h5>Finance & Risk</h5>
+        <div class="skill-box">
+          <span>Regulatory Capital</span><span>SA-CCR</span>
+          <span>Portfolio Optimization</span><span>VaR</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h5>Visualization</h5>
+        <div class="skill-box">
+          <span>Streamlit</span><span>Plotly</span><span>Dash</span>
+        </div>
+      </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact">
       <h3>Contact</h3>
       <p>Email: debjyotisadhu@gmail.com</p>
