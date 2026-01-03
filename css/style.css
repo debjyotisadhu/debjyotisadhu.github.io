@@ -1,57 +1,70 @@
+:root {
+  --bg: #0a192f;
+  --text: #ccd6f6;
+  --muted: #8892b0;
+  --accent: #64ffda;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Inter, sans-serif;
-  background: #0a192f;
-  color: #ccd6f6;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
 
-.container {
+.layout {
   display: flex;
-  max-width: 1200px;
-  margin: auto;
+  min-height: 100vh;
 }
 
+/* SIDEBAR */
 .sidebar {
-  width: 35%;
-  padding: 80px 40px;
+  width: 320px;
+  padding: 60px 40px;
   position: fixed;
 }
 
 .sidebar h1 {
-  font-size: 36px;
   color: #e6f1ff;
+  font-size: 32px;
 }
 
 .sidebar h2 {
+  color: var(--accent);
   font-size: 18px;
-  color: #64ffda;
 }
 
 .tagline {
-  margin-top: 20px;
-  color: #8892b0;
+  margin: 20px 0;
+  color: var(--muted);
 }
 
 nav a {
   display: block;
-  margin: 15px 0;
-  color: #8892b0;
+  margin: 12px 0;
+  color: var(--muted);
   text-decoration: none;
 }
 
 nav a:hover {
-  color: #64ffda;
+  color: var(--accent);
 }
 
 .links a {
   margin-right: 15px;
-  color: #64ffda;
+  color: var(--accent);
   text-decoration: none;
 }
 
+/* CONTENT */
 .content {
-  margin-left: 40%;
-  padding: 80px 40px;
+  margin-left: 360px;
+  padding: 60px 40px;
+  max-width: 900px;
 }
 
 section {
@@ -59,24 +72,64 @@ section {
 }
 
 h3 {
-  color: #64ffda;
-  font-size: 22px;
+  color: var(--accent);
+  margin-bottom: 20px;
 }
 
-.item {
-  margin-top: 25px;
+.card {
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-.item h4 {
-  color: #e6f1ff;
-  margin-bottom: 5px;
-}
-
-.item span {
+.card span {
   font-size: 14px;
-  color: #8892b0;
+  color: var(--muted);
 }
 
 ul {
-  padding-left: 20px;
+  padding-left: 18px;
+}
+
+/* SKILLS */
+.skill-group {
+  margin-bottom: 25px;
+}
+
+.skill-group h5 {
+  margin-bottom: 10px;
+  color: #e6f1ff;
+}
+
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-box span {
+  background: rgba(100,255,218,0.1);
+  border: 1px solid rgba(100,255,218,0.3);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: var(--accent);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+  }
+
+  .content {
+    margin-left: 0;
+    padding-top: 20px;
+  }
+
+  .layout {
+    flex-direction: column;
+  }
 }
